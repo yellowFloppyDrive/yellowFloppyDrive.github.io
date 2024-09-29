@@ -18,6 +18,11 @@ a:visited {
   color: #955cdb;
 }
 
+h2 {
+  margin: 0;
+  margin-bottom: .75rem;
+}
+
 ul {
   margin: 0;
   padding: 0;
