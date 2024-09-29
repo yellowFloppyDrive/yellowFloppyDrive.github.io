@@ -1,0 +1,19 @@
+################################################################################
+yellowFloppyDrive-homepage.txt
+################################################################################
+
+Homepage
+  - Banner (DONE)
+  - Schedule (DONE)
+  - Projects (DONE)
+  - Cookbooks (DONE)
+  - Notes (DONE)
+  - Speedruns (DONE)
+  - Contributions (DONE)
+
+(DONE) Cookbook pages (One page per cookbook linked to from the homepage)
+(DONE) Notes pages (One page per note)
+
+Try out Catppuccin theme on the website with monospaced fonts.
+The idea is to make it look like a code editor.
+Add thumbnails to finished projects.

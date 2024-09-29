@@ -1,0 +1,231 @@
+################################################################################
+Helix
+################################################################################
+
+--------------------------------------------------------------------------------
+Install
+--------------------------------------------------------------------------------
+
+brew install helix
+
+--------------------------------------------------------------------------------
+Setup config
+--------------------------------------------------------------------------------
+
+cd ~/.config/
+git clone git@github.com:bitbytejoy/helix.git
+
+--------------------------------------------------------------------------------
+Install language server
+--------------------------------------------------------------------------------
+
+hx --health typescript
+npm i -g typescript-language-server
+npm i -g prettier
+brew install vscode-langservers-extracted
+
+--------------------------------------------------------------------------------
+Start Helix
+--------------------------------------------------------------------------------
+
+hx
+hx <file-name>
+
+--------------------------------------------------------------------------------
+Open tutorial
+--------------------------------------------------------------------------------
+
+hx --tutor
+
+--------------------------------------------------------------------------------
+Movement
+--------------------------------------------------------------------------------
+
+hjkl - Move cursor by one character
+
+mm - Move to the matching bracket.
+
+Ctrl + s - Store the current position as a jump point
+Ctrl + o - Jump to previous jump point
+Ctrl + i - Jump to next jump point
+
+ge - Go to the end of the file
+gg - Go to the start of the file
+gl - Go to the end of the line
+gh - Go to the start of the line
+
+gf - Go to the link under the cursor
+
+--------------------------------------------------------------------------------
+Select text
+--------------------------------------------------------------------------------
+
+; - deselect
+Alt + ; - reverse selection
+
+w - word (separated on any char other than a letter) with space after
+W - WORD (separated on whitespaces) with space after
+e - end of word
+b - start of word
+
+x - select line
+
+v - start selection mode
+v2w - Select 2 words
+
+mi( - Select inside brackets (Match inside brackets)
+mi" - Match inside quotation marks
+ma( - Match including the brackets.
+
+s - select regex matches inside a selection
+Use | to select multiple words.
+S - split selection into multiple selections on regex matches
+v, n - Add search result to selection
+
+( - move the cursor to a subselection (backwards)
+) - move the cursor to a subselection (forwards)
+
+Alt + , - Remove subselection under cursor from the multi selection
+
+% - select whole file
+
+--------------------------------------------------------------------------------
+Edit text
+--------------------------------------------------------------------------------
+
+c - Change selection
+i - append
+
+I - append at the start of the line
+A - append at the end of the line
+a - append to selection
+o - append to line below
+O - append to line above
+
+ms( - Surround selection with brackets
+md( - Remove the surrounding brackets closest to the cursor
+md" - Remove the matching quotes closest to the cursor
+mr([ - Replace the matching round brackets closest to the cursor, with square brackets
+
+. - repeat last insert
+
+Ctrl + a - Increment number
+Ctrl + x - Decrement number
+
+~ - Toggle letter casing
+` - Change letter casing to lowercase
+Alt + ` - Change letter casing to uppercase
+
+& - Pressed on multiple cursor selections, select the lines
+
+--------------------------------------------------------------------------------
+Operate on lines
+--------------------------------------------------------------------------------
+
+J - join lines
+< - Unindent
+> - Indent
+
+--------------------------------------------------------------------------------
+Hover keyword
+--------------------------------------------------------------------------------
+
+Space + k - hover popup
+
+--------------------------------------------------------------------------------
+Replace
+--------------------------------------------------------------------------------
+
+r - Replace selected character
+R - Replace selection with yanked text
+f<char> - Select up to character including character
+F<char> - Backwards select up to character including character
+t<char> - Select up to character not including character
+T<char> - Backwards selected up to character not including character
+
+--------------------------------------------------------------------------------
+Cursors
+--------------------------------------------------------------------------------
+
+, - Remove extra cursors
+C - add cursor below
+Alt + C - add cursor above
+6x, Alt + s - select multiple lines add cursor to the end of each line selection
+
+--------------------------------------------------------------------------------
+Delete text
+--------------------------------------------------------------------------------
+
+d - delete character or selection
+Search
+/ - Start a regex search
+? - Do a backwards regex search
+n - Next search result
+N - Previous search result
+* - Set selected text as the search term
+g/ - Search the workspace
+
+--------------------------------------------------------------------------------
+History
+--------------------------------------------------------------------------------
+
+u - undo
+U - redo
+
+--------------------------------------------------------------------------------
+Macros
+--------------------------------------------------------------------------------
+
+Q - Start recording to @
+Q - Stop recording
+q - Replay recording
+
+--------------------------------------------------------------------------------
+Copy/paste
+--------------------------------------------------------------------------------
+
+y - yank
+p - paste
+Space + y - yank to clipboard
+Space + p - paste from clipboard
+"b, y - Change register to b and yank to b
+"b, p - Change register to b and paste from b
+
+--------------------------------------------------------------------------------
+Comment text
+--------------------------------------------------------------------------------
+
+Ctrl + c - Comment text (use multiline cursors to comment multiple lines at once)
+
+--------------------------------------------------------------------------------
+Files
+--------------------------------------------------------------------------------
+
+Space + f - Fuzzy find files
+:move - Move the buffer to another path
+:open <path> - Create a new file
+Ctrl + v - Open in vertical split
+
+--------------------------------------------------------------------------------
+Splits
+--------------------------------------------------------------------------------
+
+Ctrl + o - Close all except this one
+Ctrl + w + hjkl - Move through splits
+Ctrl + t - Transpose split
+Cycle selections
+Alt + ( - Swap the selected words places
+Alt + ) - Swap the selected words places
+
+--------------------------------------------------------------------------------
+Save
+--------------------------------------------------------------------------------
+
+:w
+
+--------------------------------------------------------------------------------
+Exit
+--------------------------------------------------------------------------------
+
+:q
+:wq

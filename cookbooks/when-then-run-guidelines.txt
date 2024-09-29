@@ -1,0 +1,103 @@
+################################################################################
+when-then-run-guidelines.txt
+################################################################################
+
+--------------------------------------------------------------------------------
+Foreword
+--------------------------------------------------------------------------------
+
+THIS IS NOT MEANT TO BE A BETTER OR WORSE WAY OF DOING THINGS.
+IT IS JUST ANOTHER APPROACH TO DO THINGS.
+
+--------------------------------------------------------------------------------
+Guidelines
+--------------------------------------------------------------------------------
+
+TypeData - App state definition
+  - The type defining the application state.
+  - The goal is to use data structure, to make writing code and loops easier.
+
+main - Initialization
+  - This is the entry point into the code.
+  - This function initialized the data of type TypeData.
+
+whenX(data) - Events that start logic execution.
+  - Events that trigger different app subprograms.
+  - Calls "then" functions.
+  - Does not call "when" functions.
+  - Does not call "stdlib" functions.
+  - Does not modify "data".
+
+thenY(data) - Business logic.
+  - Calls "run" functions.
+  - Calls "when" functions.
+  - Does not call "then" functions.
+  - Does not call "stdlib" functions.
+  - Modifies "data".
+
+runZ(args): result - Technical implementations, decoupling and readability.
+  - Calls "stdlib" functions.
+  - Does not call "when" functions.
+  - Does not call "then" functions.
+  - Receives only arguments it needs to execute the operations.
+  - Returns results.
+  - Does not modify or receive "data" as an argument.
+
+TypeX - Any type definition
+  - Any type that you might need.
+
+--------------------------------------------------------------------------------
+Benefits
+--------------------------------------------------------------------------------
+
+- If the Data is updated, then usually, only "then" functions and "when"
+  functions need to be updated, because the "run" functions are pure and don't
+  depend on the Data directly.
+
+--------------------------------------------------------------------------------
+The goal of the paradigm
+--------------------------------------------------------------------------------
+
+Make applications easier to understand and maintain (regardless of experience
+levels) by using the following thought processes:
+    - Use data structures to store data instead of abstracting and hiding data.
+    - Make writing loops and conditions easier for the programmer with the use
+      of correct data structures.
+    - Reason with "When X happens, then do Y by running Z" instead of
+      "If X do Y with Z".
+
+--------------------------------------------------------------------------------
+Inspiration
+--------------------------------------------------------------------------------
+
+- Testing frameworks, especially Jest and JavaScript testing frameworks.
+- Beginner CLI apps, e.g. the reference counter or todo CLI.
+- Probably anything considered beginner level.
+
+--------------------------------------------------------------------------------
+The origin
+--------------------------------------------------------------------------------
+
+I went back to the basics and tried to reimplement the most basic of software.
+I've have implemented a simple console application with a while loop, repeatedly
+asking for input. Here is the pseudocode of a counter implemented in this way:
+
+count = 0
+
+while(true) {
+  print("Enter an option: 1 - count up | q - quit")
+  command = getUserInput()
+
+  if (command == 1) {
+    count++
+    print("Count: " + count)
+  } else if (command == q) {
+    break
+  } else {
+    print("The option is not valid");
+  }
+}
+
+I've elaborated on this logic and with the way I were writing requirements on
+paper with the when, then notation. After trial and error I came up with a
+similar paradigm that I am documenting here.

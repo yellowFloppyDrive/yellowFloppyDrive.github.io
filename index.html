@@ -1,13 +1,285 @@
 <html lang="en">
   <head>
     <title>yellowFloppyDrive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/public/logo.png" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
 
   <body>
-    <h1>Homepage</h1>
+    <div style="background: #ffda1f; padding: 2rem 0; text-align: center">
+      <img src="/public/floppy.svg" />
+      <h1>yellowFloppyDrive</h1>
+    </div>
 
-    <div>
-      <a href="/leaderboard">Show the leaderboard</a>
+    <div style="margin: auto; max-width: calc(100vw - 2rem); width: 1024px">
+      <div>
+        <h2>Schedule</h2>
+      </div>
+
+      <div>
+        <h3>Types of streams</h3>
+
+        <ul>
+          <li>Coding - Learning new stuff and coding.</li>
+          <li>
+            Recap - Review & reorganize notes and write speedrun challenges.
+          </li>
+          <li>Speedrun - Solve a challenge as effective as possible.</li>
+        </ul>
+      </div>
+
+      <div style="display: grid" class="grid-3-column-layout">
+        <div>
+          <div>
+            <h3>Finished projects</h3>
+          </div>
+
+          <div>
+            <ul>
+              <li>
+                Neovim config
+                <a href="https://github.com/yellowFloppyDrive/nvim"
+                  >[Link to project]</a
+                >
+              </li>
+              <li>
+                Counter console app<a
+                  href="https://github.com/yellowFloppyDrive/when-counter-console-app"
+                  >[Link to project]</a
+                >
+              </li>
+              <li>
+                Todo CLI
+                <a href="https://github.com/yellowFloppyDrive/when-todo-cli"
+                  >[Link to project]</a
+                >
+              </li>
+              <li>
+                Counter web app
+                <a href="https://github.com/yellowFloppyDrive/when-counter"
+                  >[Link to project]</a
+                >
+              </li>
+              <li>
+                Teleprompter web app
+                <a href="https://github.com/yellowFloppyDrive/when-teleprompter"
+                  >[Link to project]</a
+                >
+              </li>
+              <li>
+                Todo web app
+                <a href="https://github.com/yellowFloppyDrive/when-todo-webapp"
+                  >[Link to project]</a
+                >
+              </li>
+              <li>
+                Chat web app & server
+                <a href="https://github.com/yellowFloppyDrive/when-chat-app"
+                  >[Link to project]</a
+                >
+              </li>
+              <li>
+                Echo CLI in Zig
+                <a href="https://github.com/yellowFloppyDrive/echo-cli-zig"
+                  >[Link to project]</a
+                >
+              </li>
+              <li>
+                Counter CLI in Zig
+                <a href="https://github.com/yellowFloppyDrive/counter-cli-zig"
+                  >[Link to project]</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <h3>WIP</h3>
+          </div>
+
+          <div>
+            <ul>
+              <li>yellowfloppydrive.com homepage. (DONE)</li>
+              <li>
+                Move all the stuff from the cookbook repository to the homepage.
+              </li>
+              <li>Update Twitch links in the about section.</li>
+              <li>
+                (ON HOLD) Todo CLI - Zig -
+                https://github.com/yellowFloppyDrive/todo-cli-zig
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <h3>Upcoming projects</h3>
+          </div>
+
+          <div>
+            <ul>
+              <li>OpenGL integration (Render a dot) - Zig</li>
+              <li>
+                (ON HOLD) Snake clone. Learning WebGL
+                https://github.com/yellowFloppyDrive/snake-clone
+              </li>
+              <li>WebGL</li>
+              <li>Algorithms and data structures</li>
+              <li>Keystroke - Key visualizer for the stream</li>
+              <li>Check out Crystal programming language</li>
+              <li>
+                Write an automatic function to file refactoring tool for Zig
+              </li>
+              <li>Hextrix in terminal (like VIM, but for mind maps)</li>
+              <li>Image to ASCII art converter</li>
+              <li>GIF to ASCII art converter</li>
+              <li>Hextrix</li>
+              <li>Space Invaders</li>
+              <li>Pong clone</li>
+              <li>Tetris clone</li>
+              <li>Pacman clone</li>
+              <li>Match 3 clone</li>
+              <li>Leetcode platform</li>
+              <li>Code editor</li>
+              <li>Website translator</li>
+              <li>SVG editor</li>
+              <li>Try Discord</li>
+              <li>
+                Generating documentation with the when-then-run file structure
+                (Reading when functions and converting them to sections in the
+                documentation. Reading then functions and converting them into
+                explanations.)
+              </li>
+              <li>Write down all cool VIM keymappings (e.g. gx and gf)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid" class="grid-3-column-layout">
+        <div>
+          <div>
+            <h2>Cookbooks</h2>
+          </div>
+
+          <div>
+            <ul>
+              <li>
+                Github CLI | gh <a href="/cookbooks/github-cli.txt">[Link]</a>
+              </li>
+              <li>Helix <a href="/cookbooks/helix.txt">[Link]</a></li>
+              <li>iTerm <a href="/cookbooks/iterm.txt">[Link]</a></li>
+              <li>Neovim <a href="/cookbooks/neovim.txt">[Link]</a></li>
+              <li>Socket.IO <a href="/cookbooks/socket-io.txt">[Link]</a></li>
+              <li>WebGL <a href="/cookbooks/webgl.txt">[Link]</a></li>
+              <li>
+                when-then-run guidelines
+                <a href="/cookbooks/when-then-run-guidelines.txt">[Link]</a>
+              </li>
+              <li>Zig <a href="/cookbooks/zig.txt">[Link]</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <h2>Notes</h2>
+          </div>
+
+          <div>
+            <ul>
+              <li>Bash <a href="/notes/bash.txt">[Link]</a></li>
+              <li>
+                Counter CLI in Zig
+                <a href="/notes/counter-cli-zig.txt">[Link]</a>
+              </li>
+              <li>Github Pages <a href="/notes/gh-pages.txt">[Link]</a></li>
+              <li>
+                Todo CLI in Zig <a href="/notes/todo-cli-zig.txt">[Link]</a>
+              </li>
+              <li>
+                yellowFloppyDrive Homepage
+                <a href="/notes/yellowFloppyDrive-homepage.txt">[Link]</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <h2>Speedruns</h2>
+          </div>
+
+          <div>
+            <ul>
+              <li>Create a chat room with Socket.IO</li>
+              <li>when-then-run TODO CLI app</li>
+              <li>when-then-run TODO web app</li>
+              <li>when-then-run counter CLI</li>
+              <li>when-then-run counter web app</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <h2>Contributions</h2>
+        </div>
+
+        <div>
+          <ul>
+            <li>bat instead of cat - @Wgaffa</li>
+
+            <li>
+              gh instead of manual page fiddling for GitHub
+              https://cli.github.com - @Wgaffa
+            </li>
+
+            <li>
+              https://github.com/iamkun/dayjs/ day.js is a replacement for
+              moment.js and moment.js is deprecated. - @JuiceMitApfelnDrin &
+              @uranium_cat911
+            </li>
+
+            <li>https://regexr.com/ - @JuiceMitApfelnDrin</li>
+
+            <li>https://easings.net/ - @zanchho</li>
+
+            <li>
+              https://www.regexbuddy.com/buynow.html#pricing (The only RegEx
+              tool that you could use back in the days) - @Wgaffa
+            </li>
+
+            <li>
+              comptime in Zig is like static eval (Gets compiled and evaluated
+              before link) - @grayhatter_
+            </li>
+
+            <li>[*c] in Zig is a simple C pointer - @grayhatter_</li>
+
+            <li>while(maybeNull()) |non_null| {} in Zig - @grayhatter_</li>
+
+            <li>
+              callable() catch |err| switch (err) { error.Name => ... }; -
+              @grayhatter_
+            </li>
+
+            <li>
+              usize and isize are pointer sized integers - @uranium_cat911
+            </li>
+
+            <li>
+              https://vitejs.dev/guide/static-deploy - Vite Github Pages
+              deployment config - @uranium_cat911
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <script src="/scripts/helloWorld.js"></script>

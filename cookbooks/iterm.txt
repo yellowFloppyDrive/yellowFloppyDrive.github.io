@@ -1,0 +1,15 @@
+################################################################################
+iterm.txt
+################################################################################
+
+--------------------------------------------------------------------------------
+Catppuccin Theme
+--------------------------------------------------------------------------------
+
+git clone git@github.com:catppuccin/iterm.git
+
+# Open iTerm2 -> Settings -> Profiles -> Colors
+# Under Color Presets -> Import, import iterm/colors/catppuccin-macchiato.itermcolors.
+# Pick the "catppuccin-macchiato" color preset.
+# Pick the "Dark Mode" as the color preset.
+# Disable "Use different colors for light mode and dark mode".

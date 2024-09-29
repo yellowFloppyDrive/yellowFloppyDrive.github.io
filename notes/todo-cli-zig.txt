@@ -1,0 +1,44 @@
+################################################################################
+todo-cli-zig.txt
+################################################################################
+
+When app starts
+  - Then render the menu. (DONE)
+    - Renders the message "Pick an option (1 - List todos, 2 - Add todo,
+      3 - Complete todo, 4 - Remove todo, q - Quit)". (DONe)
+  - Then take option from user.
+
+When list todos is requested
+  - Then list all todos.
+  - Then render the menu.
+  - Then take option from user.
+
+When add todo option is requested
+  - Then ask user for TODO title.
+  - Then take title input from user.
+  - Then render the menu.
+  - Then take option from user.
+
+When complete todo option is requested
+  - Then ask the user for the TODO ID to complete.
+  - Then take the TODO ID from the user.
+  - Then if the ID exists complete the todo, otherwise print that the TODO does
+    not exit.
+  - Then render the menu.
+  - Then take option from user.
+
+When remove todo option is requested
+  - Then ask the user for the TODO ID to remove.
+  - Then take the TODO ID from the user.
+  - Then if the ID exists remove the todo, otherwise print that the TODO does
+    not exit.
+  - Then render the menu.
+  - Then take option from user.
+
+When quit option is requested
+  - Then exit the application.
+
+When an unknown command is requested
+  - Then print "Unknown command"
+  - Then render the menu.
+  - Then take option from user.
