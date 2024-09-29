@@ -24,10 +24,24 @@ ul {
   margin-left: 14px;
 }
 
+.container {
+  margin: auto;
+  max-width: calc(100vw - 2rem);
+  width: 1024px;
+}
+
 .grid-3-column-layout {
   display: grid;
   gap: 1rem;
   @media (min-width: 1024px) {
     grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+  }
+}
+
+.grid-2-column-layout {
+  display: grid;
+  gap: 1rem;
+  @media (min-width: 1024px) {
+    grid-template-columns: calc(100% / 2) calc(100% / 2);
   }
 }
