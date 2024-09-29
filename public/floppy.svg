@@ -4,14 +4,14 @@
 <path d="M4 10C4 6.68629 6.68629 4 10 4H80.875C84.1887 4 86.875 6.68629 86.875 10V79C86.875 80.6569 85.5319 82 83.875 82H7C5.34315 82 4 80.6569 4 79V10Z" fill="#616161"/>
 </mask>
 <g mask="url(#mask0_38_347)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M8.87499 4H4V82H86.875V4H13.75V6.875C13.75 7.97957 12.8546 8.875 11.75 8.875H10.875C9.77042 8.875 8.87499 7.97957 8.87499 6.875V4Z" fill="#616161"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.87499 4H4V82H86.875V4H13.75V6.875C13.75 7.97957 12.8546 8.875 11.75 8.875H10.875C9.77042 8.875 8.87499 7.97957 8.87499 6.875V4Z" fill="#23273C"/>
 <g filter="url(#filter1_d_38_347)">
 <mask id="mask1_38_347" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="13" y="43" width="65" height="39">
 <path d="M13.75 49C13.75 45.6863 16.4363 43 19.75 43H71.125C74.4387 43 77.125 45.6863 77.125 49V82H13.75V49Z" fill="#F9F9F9"/>
 </mask>
 <g mask="url(#mask1_38_347)">
 <rect x="13.75" y="43" width="63.375" height="39" fill="#F9F9F9"/>
-<rect x="13.75" y="43" width="63.375" height="9.75" fill="#B0D9FF"/>
+<rect x="13.75" y="43" width="63.375" height="9.75" fill="#C591FF"/>
 </g>
 </g>
 <g filter="url(#filter2_di_38_347)">

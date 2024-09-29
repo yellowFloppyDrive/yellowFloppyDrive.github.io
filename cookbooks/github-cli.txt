@@ -31,4 +31,4 @@ gh repo clone [<name>]
 Open repository in browser
 --------------------------------------------------------------------------------
 
-gh repo view [<repository>] --web
+gh browse

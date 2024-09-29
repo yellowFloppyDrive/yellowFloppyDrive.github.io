@@ -2,10 +2,31 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: monospace;
+}
+
+body {
+  background: #23273c;
+  color: #b3b5ca;
+}
+
+a {
+  color: #c591ff;
+}
+
+a:visited {
+  color: #955cdb;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  margin-left: 14px;
 }
 
 .grid-3-column-layout {
+  display: grid;
+  gap: 1rem;
   @media (min-width: 1024px) {
     grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
   }

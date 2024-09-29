@@ -9,27 +9,35 @@
   <body>
     <div style="background: #ffda1f; padding: 2rem 0; text-align: center">
       <img src="/public/floppy.svg" />
-      <h1>yellowFloppyDrive</h1>
+      <h1 style="color: #23273c">yellowFloppyDrive</h1>
     </div>
 
-    <div style="margin: auto; max-width: calc(100vw - 2rem); width: 1024px">
+    <div
+      style="
+        display: grid;
+        gap: 2rem;
+        margin: auto;
+        max-width: calc(100vw - 2rem);
+        width: 1024px;
+      "
+    >
       <div>
-        <h2>Schedule</h2>
+        <div>
+          <h2>Schedule</h2>
+        </div>
+
+        <div>
+          <ul>
+            <li>Coding - Learning new stuff and coding.</li>
+            <li>
+              Recap - Review & reorganize notes and write speedrun challenges.
+            </li>
+            <li>Speedrun - Solve a challenge as effective as possible.</li>
+          </ul>
+        </div>
       </div>
 
-      <div>
-        <h3>Types of streams</h3>
-
-        <ul>
-          <li>Coding - Learning new stuff and coding.</li>
-          <li>
-            Recap - Review & reorganize notes and write speedrun challenges.
-          </li>
-          <li>Speedrun - Solve a challenge as effective as possible.</li>
-        </ul>
-      </div>
-
-      <div style="display: grid" class="grid-3-column-layout">
+      <div class="grid-3-column-layout">
         <div>
           <div>
             <h3>Finished projects</h3>
@@ -103,64 +111,77 @@
           <div>
             <ul>
               <li>yellowfloppydrive.com homepage. (DONE)</li>
+
               <li>
                 Move all the stuff from the cookbook repository to the homepage.
               </li>
+
               <li>Update Twitch links in the about section.</li>
+
               <li>
                 (ON HOLD) Todo CLI - Zig -
-                https://github.com/yellowFloppyDrive/todo-cli-zig
+                <a href="https://github.com/yellowFloppyDrive/todo-cli-zig"
+                  >[Link to project]</a
+                >
               </li>
-            </ul>
-          </div>
-        </div>
 
-        <div>
-          <div>
-            <h3>Upcoming projects</h3>
-          </div>
-
-          <div>
-            <ul>
-              <li>OpenGL integration (Render a dot) - Zig</li>
               <li>
                 (ON HOLD) Snake clone. Learning WebGL
-                https://github.com/yellowFloppyDrive/snake-clone
+                <a href="https://github.com/yellowFloppyDrive/snake-clone"
+                  >[Link to project]</a
+                >
               </li>
-              <li>WebGL</li>
-              <li>Algorithms and data structures</li>
-              <li>Keystroke - Key visualizer for the stream</li>
-              <li>Check out Crystal programming language</li>
-              <li>
-                Write an automatic function to file refactoring tool for Zig
-              </li>
-              <li>Hextrix in terminal (like VIM, but for mind maps)</li>
-              <li>Image to ASCII art converter</li>
-              <li>GIF to ASCII art converter</li>
-              <li>Hextrix</li>
-              <li>Space Invaders</li>
-              <li>Pong clone</li>
-              <li>Tetris clone</li>
-              <li>Pacman clone</li>
-              <li>Match 3 clone</li>
-              <li>Leetcode platform</li>
-              <li>Code editor</li>
-              <li>Website translator</li>
-              <li>SVG editor</li>
-              <li>Try Discord</li>
-              <li>
-                Generating documentation with the when-then-run file structure
-                (Reading when functions and converting them to sections in the
-                documentation. Reading then functions and converting them into
-                explanations.)
-              </li>
-              <li>Write down all cool VIM keymappings (e.g. gx and gf)</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div style="display: grid" class="grid-3-column-layout">
+      <div>
+        <div>
+          <h3>Upcoming projects</h3>
+        </div>
+
+        <div class="grid-3-column-layout">
+          <ul>
+            <li>OpenGL integration (Render a dot) - Zig</li>
+            <li>WebGL</li>
+            <li>Algorithms and data structures</li>
+            <li>Keystroke - Key visualizer for the stream</li>
+            <li>Check out Crystal programming language</li>
+            <li>
+              Write an automatic function to file refactoring tool for Zig
+            </li>
+            <li>Hextrix in terminal (like VIM, but for mind maps)</li>
+          </ul>
+
+          <ul>
+            <li>Image to ASCII art converter</li>
+            <li>GIF to ASCII art converter</li>
+            <li>Hextrix</li>
+            <li>Space Invaders</li>
+            <li>Pong clone</li>
+            <li>Tetris clone</li>
+            <li>Pacman clone</li>
+            <li>Match 3 clone</li>
+            <li>Leetcode platform</li>
+          </ul>
+
+          <ul>
+            <li>Code editor</li>
+            <li>Website translator</li>
+            <li>SVG editor</li>
+            <li>Try Discord</li>
+            <li>
+              Generating documentation with the when-then-run file structure
+              (Reading when functions and converting them to sections in the
+              documentation. Reading then functions and converting them into
+              explanations.)
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid-3-column-layout">
         <div>
           <div>
             <h2>Cookbooks</h2>
@@ -280,6 +301,10 @@
           </ul>
         </div>
       </div>
+    </div>
+
+    <div style="margin-top: 5rem; text-align: center; padding: 1rem 0;">
+      <small>&copy; yellowFloppyDrive</small>
     </div>
 
     <script src="/scripts/helloWorld.js"></script>

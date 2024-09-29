@@ -14,6 +14,10 @@ Homepage
 (DONE) Cookbook pages (One page per cookbook linked to from the homepage)
 (DONE) Notes pages (One page per note)
 
-Try out Catppuccin theme on the website with monospaced fonts.
-The idea is to make it look like a code editor.
+(DONE) Try out Catppuccin theme.
+(DONE) Change the site fonts to look like monospaced code.
+(DONE) Separate `Upcoming projects` into it's own section with 3 columns.
+Add copyright
+
 Add thumbnails to finished projects.
+
