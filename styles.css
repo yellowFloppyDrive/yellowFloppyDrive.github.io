@@ -24,9 +24,21 @@ h2 {
 }
 
 ul {
+  display: block;
   margin: 0;
   padding: 0;
-  margin-left: 14px;
+  list-style: none;
+}
+
+ul li {
+  box-sizing: border-box;
+  padding-left: 1.5rem;
+}
+
+ul li::before {
+  position: absolute;
+  margin-left: -1.5rem;
+  content: "- ";
 }
 
 .container {
@@ -43,10 +55,23 @@ ul {
   }
 }
 
+.grid-3-column-layout > * {
+  @media(min-width: 1024px) {
+    max-width: calc(100% - 2rem);
+  }
+}
+
 .grid-2-column-layout {
   display: grid;
   gap: 1rem;
+
   @media (min-width: 1024px) {
     grid-template-columns: calc(100% / 2) calc(100% / 2);
+  }
+}
+
+.grid-2-column-layout > * {
+  @media(min-width: 1024px) {
+    max-width: calc(100% - 1rem);
   }
 }
