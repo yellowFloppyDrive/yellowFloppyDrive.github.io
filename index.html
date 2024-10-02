@@ -1,259 +1,96 @@
 <html lang="en">
+  <head>
+    <title>yellowFloppyDrive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/public/logo.png" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
 
-<head>
-  <title>yellowFloppyDrive</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="/public/logo.png" />
-  <link rel="stylesheet" href="/styles.css" />
-</head>
-
-<body>
-  <div style="background: #ffda1f; padding: 2rem 0; text-align: center">
-    <img src="/public/floppy.svg" />
-    <h1 style="color: #23273c">yellowFloppyDrive</h1>
-  </div>
-
-  <div style="background: #5c6a91; height: 1rem"></div>
-
-  <div style="display: grid; gap: 2rem" class="container">
-    <div></div>
-
-    <div>
-      <div>
-        <h2>Socials</h2>
-      </div>
-
-      <div style="display: flex; flex-wrap: wrap; gap: 2rem">
-        <span>
-          <a href="https://www.twitch.tv/bitbytejoy" style="display: flex; align-items: center; gap: 0.75rem"><img
-              src="/public/twitch-logo.svg" style="height: 2rem" /><span>@bitbytejoy</span></a>
-        </span>
-
-        <span>
-          <a href="https://www.youtube.com/@yellowFloppyDrive"
-            style="display: flex; align-items: center; gap: 0.75rem"><img src="/public/youtube-logo.png"
-              style="height: 2rem" /><span>@yellowFloppyDrive</span></a>
-        </span>
-
-        <span>
-          <a href="https://x.com/yFloppyDrive" style="display: flex; align-items: center; gap: 0.75rem"><img
-              src="/public/x-logo.svg" style="height: 2rem" /><span>@yFloppyDrive</span></a>
-        </span>
-
-        <span>
-          <a href="https://github.com/yellowFloppyDrive" style="display: flex; align-items: center; gap: 0.75rem"><img
-              src="/public/github-logo.svg" style="height: 2rem" /><span>@yelloFloppyDrive</span></a>
-        </span>
-      </div>
+  <body>
+    <div style="background: #ffda1f; padding: 2rem 0; text-align: center">
+      <img src="/public/floppy.svg" />
+      <h1 style="color: #23273c">yellowFloppyDrive</h1>
     </div>
 
     <div style="background: #5c6a91; height: 1rem"></div>
 
-    <div>
-      <div>
-        <h2>Twitch Schedule</h2>
-      </div>
+    <div style="background: #5c6a91; padding: 1rem 0; position: sticky; top: 0">
+      <div class="container">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 1rem;
+          "
+        >
+          <div>
+            <a href="/knowledgebase" style="color: #f9f8f1; font-weight: bold"
+              >Knowledgebase</a
+            >
+          </div>
 
-      <div>
-        <p>
-          There is no specific Twitch streaming schedule that I am following.
-          I stream as much as there I have free time to stream.
-        </p>
+          <div>
+            <a href="/projects" style="color: #f9f8f1; font-weight: bold"
+              >Projects</a
+            >
+          </div>
+
+          <div>
+            <a href="/blog" style="color: #f9f8f1; font-weight: bold">Blog</a>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div style="background: #5c6a91; height: 1rem"></div>
+    <div style="display: grid; gap: 2rem" class="container">
+      <div></div>
 
-    <div style="display: grid; gap: 1rem">
       <div>
         <div>
-          <h2>Projects</h2>
+          <h2>Socials</h2>
         </div>
 
-        <div style="display: grid; gap: 1rem;">
-          <div>
-            <div>
-              <h3>WIP</h3>
-            </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 2rem">
+          <span>
+            <a
+              href="https://www.twitch.tv/bitbytejoy"
+              style="display: flex; align-items: center; gap: 0.75rem"
+              ><img src="/public/twitch-logo.svg" style="height: 2rem" /><span
+                >@bitbytejoy</span
+              ></a
+            >
+          </span>
 
-            <div>
-              <ul>
-                <li>
-                  Todo CLI - Zig -
-                  <a href="https://github.com/yellowFloppyDrive/todo-cli-zig">[Link to project]</a>
-                </li>
+          <span>
+            <a
+              href="https://www.youtube.com/@yellowFloppyDrive"
+              style="display: flex; align-items: center; gap: 0.75rem"
+              ><img src="/public/youtube-logo.png" style="height: 2rem" /><span
+                >@yellowFloppyDrive</span
+              ></a
+            >
+          </span>
 
-                <li>
-                  Snake clone. Learning WebGL
-                  <a href="https://github.com/yellowFloppyDrive/snake-clone">[Link to project]</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <span>
+            <a
+              href="https://x.com/yFloppyDrive"
+              style="display: flex; align-items: center; gap: 0.75rem"
+              ><img src="/public/x-logo.svg" style="height: 2rem" /><span
+                >@yFloppyDrive</span
+              ></a
+            >
+          </span>
 
-          <div>
-            <div>
-              <h3>Finished projects</h3>
-            </div>
-
-            <div>
-              <ul>
-                <li>
-                  Neovim config
-                  <a href="https://github.com/yellowFloppyDrive/nvim">[Link to project]</a>
-                </li>
-                <li>
-                  Counter console app<a href="https://github.com/yellowFloppyDrive/when-counter-console-app">[Link to
-                    project]</a>
-                </li>
-                <li>
-                  Todo CLI
-                  <a href="https://github.com/yellowFloppyDrive/when-todo-cli">[Link to project]</a>
-                </li>
-                <li>
-                  Counter web app
-                  <a href="https://github.com/yellowFloppyDrive/when-counter">[Link to project]</a>
-                </li>
-                <li>
-                  Teleprompter web app
-                  <a href="https://github.com/yellowFloppyDrive/when-teleprompter">[Link to project]</a>
-                </li>
-                <li>
-                  Todo web app
-                  <a href="https://github.com/yellowFloppyDrive/when-todo-webapp">[Link to project]</a>
-                </li>
-                <li>
-                  Chat web app & server
-                  <a href="https://github.com/yellowFloppyDrive/when-chat-app">[Link to project]</a>
-                </li>
-                <li>
-                  Echo CLI in Zig
-                  <a href="https://github.com/yellowFloppyDrive/echo-cli-zig">[Link to project]</a>
-                </li>
-                <li>
-                  Counter CLI in Zig
-                  <a href="https://github.com/yellowFloppyDrive/counter-cli-zig">[Link to project]</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div>
-            <div>
-              <h3>Upcoming projects</h3>
-            </div>
-
-            <div class="grid-3-column-layout">
-              <ul>
-                <li>OpenGL integration (Render a dot) - Zig</li>
-                <li>WebGL</li>
-                <li>Algorithms and data structures</li>
-                <li>Keystroke - Key visualizer for the stream</li>
-                <li>Check out Crystal programming language</li>
-                <li>
-                  Write an automatic function to file refactoring tool for Zig
-                </li>
-                <li>Hextrix in terminal (like VIM, but for mind maps)</li>
-              </ul>
-
-              <ul>
-                <li>Image to ASCII art converter</li>
-                <li>GIF to ASCII art converter</li>
-                <li>Hextrix</li>
-                <li>Space Invaders</li>
-                <li>Pong clone</li>
-                <li>Tetris clone</li>
-                <li>Pacman clone</li>
-                <li>Match 3 clone</li>
-                <li>Leetcode platform</li>
-              </ul>
-
-              <ul>
-                <li>Code editor</li>
-                <li>Website translator</li>
-                <li>SVG editor</li>
-                <li>Try Discord</li>
-                <li>
-                  Generating documentation with the when-then-run file structure
-                  (Reading when functions and converting them to sections in the
-                  documentation. Reading then functions and converting them into
-                  explanations.)
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div style="background: #5c6a91; height: 1rem"></div>
-
-      <div class="grid-3-column-layout container">
-        <div>
-          <div>
-            <h2>Cookbooks</h2>
-          </div>
-
-          <div>
-            <ul>
-              <li>
-                Github CLI | gh <a href="/cookbooks/github-cli.txt">[Link]</a>
-              </li>
-              <li>Helix <a href="/cookbooks/helix.txt">[Link]</a></li>
-              <li>iTerm <a href="/cookbooks/iterm.txt">[Link]</a></li>
-              <li>Neovim <a href="/cookbooks/neovim.txt">[Link]</a></li>
-              <li>Socket.IO <a href="/cookbooks/socket-io.txt">[Link]</a></li>
-              <li>WebGL <a href="/cookbooks/webgl.txt">[Link]</a></li>
-              <li>
-                when-then-run guidelines
-                <a href="/cookbooks/when-then-run-guidelines.txt">[Link]</a>
-              </li>
-              <li>Zig <a href="/cookbooks/zig.txt">[Link]</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <h2>Notes</h2>
-          </div>
-
-          <div>
-            <ul>
-              <li>Bash <a href="/notes/bash.txt">[Link]</a></li>
-
-              <li>
-                Counter CLI in Zig
-                <a href="/notes/counter-cli-zig.txt">[Link]</a>
-              </li>
-
-              <li>Github Pages <a href="/notes/gh-pages.txt">[Link]</a></li>
-
-              <li>
-                Todo CLI in Zig <a href="/notes/todo-cli-zig.txt">[Link]</a>
-              </li>
-
-              <li>
-                yellowFloppyDrive Homepage
-                <a href="/notes/yellowFloppyDrive-homepage.txt">[Link]</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <h2>Speedruns</h2>
-          </div>
-
-          <div>
-            <ul>
-              <li>Create a chat room with Socket.IO</li>
-              <li>when-then-run TODO CLI app</li>
-              <li>when-then-run TODO web app</li>
-              <li>when-then-run counter CLI</li>
-              <li>when-then-run counter web app</li>
-            </ul>
-          </div>
+          <span>
+            <a
+              href="https://github.com/yellowFloppyDrive"
+              style="display: flex; align-items: center; gap: 0.75rem"
+              ><img src="/public/github-logo.svg" style="height: 2rem" /><span
+                >@yelloFloppyDrive</span
+              ></a
+            >
+          </span>
         </div>
       </div>
 
@@ -261,74 +98,46 @@
 
       <div>
         <div>
-          <h2>Contributions</h2>
+          <h2>What is yellowFloppyDrive?</h2>
         </div>
 
         <div>
-          <ul>
-            <li>bat instead of cat - @Wgaffa</li>
-
-            <li>
-              gh instead of manual page fiddling for GitHub
-              <a href="https://cli.github.com">[Link]</a> - @Wgaffa
-            </li>
-
-            <li>
-              <a href="https://github.com/iamkun/dayjs/">day.js</a> is a
-              replacement for moment.js and moment.js is deprecated. -
-              @JuiceMitApfelnDrin & @uranium_cat911
-            </li>
-
-            <li>
-              <a href="https://regexr.com/">Regexr</a> - @JuiceMitApfelnDrin
-            </li>
-
-            <li><a href="https://easings.net/">Easing</a> - @zanchho</li>
-
-            <li>
-              <a href="https://www.regexbuddy.com/buynow.html#pricing">Regex Buddy</a>
-              (The only RegEx tool that you could use back in the days) -
-              @Wgaffa
-            </li>
-
-            <li>
-              comptime in Zig is like static eval (Gets compiled and evaluated
-              before link) - @grayhatter_
-            </li>
-
-            <li>[*c] in Zig is a simple C pointer - @grayhatter_</li>
-
-            <li>while(maybeNull()) |non_null| {} in Zig - @grayhatter_</li>
-
-            <li>
-              callable() catch |err| switch (err) { error.Name => ... }; -
-              @grayhatter_
-            </li>
-
-            <li>
-              usize and isize are pointer sized integers - @uranium_cat911
-            </li>
-
-            <li>
-              <a href="https://vitejs.dev/guide/static-deploy">Vite static deploy</a>
-              - Vite Github Pages deployment config - @uranium_cat911
-            </li>
-          </ul>
+          <p>
+            yellowFloppyDrive is a passion project. The purpose of this project
+            is get better at coding, get better at learning, get better at note
+            taking, get better at simplifying code, get better at all things
+            programming related. The goal is simple: "Get good at coding, keep
+            it simple and enjoy the journey".<br>
+            <br>
+            Other than that, this is the place where I will be keeping my
+            thoughts and experiences. If you are on a similar journey, you might
+            find this interesting and it might help you. If you do find that
+            anything here helps you, shoot me a message at
+            <a href="mailto:yellowFloppyDrive@gmail.com">yellowFloppyDrive@gmail.com</a>.
+            If you find that you are looking for more answers, try visiting one
+            of my channels. If that also does not help, shoot me a message. I
+            will give my best to help you on your journey.<br>
+            <br>
+            "The colors are very childish. I don't like it." - Well, this is an
+            opinionated project. I like childish and playful, because it is fun
+            and enjoyable. If you don't like it please move along. There are
+            other people who will, or already do find it interesting.
+          </p>
         </div>
       </div>
     </div>
-  </div>
 
-  <div style="
-      margin-top: 3rem;
-      background: #5c6a91;
-      text-align: center;
-      padding: 1rem 0;
-    ">
-    <small>&copy; yellowFloppyDrive</small>
-  </div>
+    <div
+      style="
+        margin-top: 3rem;
+        background: #5c6a91;
+        text-align: center;
+        padding: 1rem 0;
+      "
+    >
+      <small>&copy; yellowFloppyDrive</small>
+    </div>
 
-  <script src="/scripts/helloWorld.js"></script>
-</body>
-
+    <script src="/scripts/helloWorld.js"></script>
+  </body>
 </html>
