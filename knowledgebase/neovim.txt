@@ -36,39 +36,74 @@ LSP setup
 - Add the language server setup() call to mason-lspconfig.lsp.
 
 --------------------------------------------------------------------------------
-Keymappings
+Default keymappings
 --------------------------------------------------------------------------------
 
+Movement
+--------
 jk - up/down
 hl - left/right
-i - Insert mode
-v - Visual mode
 w - next word
 e - end of word
 ^ - Goto start of the line
 $ - Goto end of line
+f<char> - Go to next occurence of character
+F<char> - Go to previous occurence of character
+
+Text editing
+------------
+i - Insert mode
+v - Visual mode
 ~ - Change casing
 I - Insert at the beginning of the line
 A - Insert at the end of the line
 r - Replace
 . - Repeats last action
 
+Search
+------
+/ - Search next
+? - Search previous
+n - Go to next occurrence
+N - Go to previous occurrence
+
+Links & Paths
+-------------
+gx - Open link or path in default system app
+gf - Open link or path in VIM
+
+Macros
+------
 qq - Start recording macro
 @q - Play macro from q
 
+Copy/paste
+----------
 y - Copy selection
 yy - Copy line
 p - Paste
+
+--------------------------------------------------------------------------------
+Custom keymappings
+--------------------------------------------------------------------------------
+
+Copy/paste
+----------
 <leader>y - Copy selection to clipboard
 <leader>p - Paste from clipboard
 
-<C-N> - Default keymapping for autocomplete from buffers
-<C-l> - Best custom autocomplete from buffers keymap
+Autocomplete
+------------
+<C-l> - Autocomplete from buffers. (Default <C-n> is overriden by LSP)
 
+Search
+------
+<leader>/ - Search in workspace
+
+LSP
+---
 gd - Go to definition
 <leader>r - Rename
 <leader>a - Code action
-<C-n> - Autocomplete from the LSP autcomplete plugin
+<C-n> - Autocomplete with LSP
 
-gx - Open link or path in default system app
-gf - Open link or path in VIM
