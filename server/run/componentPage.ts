@@ -7,7 +7,7 @@ export function componentPage(args: PageArgs): string {
     return `<html lang="en">
   ${args.headHtml}
 
-  <body>
+  <body style="padding-bottom: 5rem;">
     ${args.bodyHtml}
   </body>
 </html>`;

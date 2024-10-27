@@ -4,8 +4,6 @@ import {componentMenuLink} from "./componentMenuLink";
 export function componentMenu(): string {
     const links: MenuLinkArgs[] = [
         {href: "/", text: "Start"},
-        {href: "/cookbooks", text: "Cookbooks"},
-        {href: "/projects", text: "Projects"},
         {href: "/blog", text: "Blog"},
     ];
 
