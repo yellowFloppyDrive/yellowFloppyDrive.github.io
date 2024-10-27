@@ -1,20 +1,20 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-import { pageIndex } from "./pageIndex";
-import { pageBlog } from "./pageBlog";
-import { pageCookbooks } from "./pageCookbooks";
-import { runExportHtml } from "./runExportHtml";
-import { pageProjects } from "./pageProjects";
+import {pageIndex} from "./run/pageIndex";
+import {pageBlog} from "./run/pageBlog";
+import {pageCookbooks} from "./run/pageCookbooks";
+import {exportHtml} from "./run/exportHtml";
+import {pageProjects} from "./run/pageProjects";
 
 export async function main(): Promise<void> {
-  await fs.writeFile(
-    path.resolve(__dirname, "../public/index.html"),
-    pageIndex(),
-  );
+    await fs.writeFile(
+        path.resolve(__dirname, "../public/index.html"),
+        pageIndex(),
+    );
 
-  await runExportHtml({ html: pageBlog(), pageDir: "blog" });
-  await runExportHtml({ html: pageCookbooks(), pageDir: "cookbooks" });
-  await runExportHtml({ html: pageProjects(), pageDir: "projects" });
+    await exportHtml({html: pageBlog(), pageDir: "blog"});
+    await exportHtml({html: pageCookbooks(), pageDir: "cookbooks"});
+    await exportHtml({html: pageProjects(), pageDir: "projects"});
 }
 
 main();

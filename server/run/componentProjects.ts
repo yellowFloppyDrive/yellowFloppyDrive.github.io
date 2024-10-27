@@ -1,4 +1,3 @@
-
 export function componentProjects(): string {
     return `<div>
   <div>

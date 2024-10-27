@@ -1,5 +1,5 @@
 export function componentCookbooksList(): string {
-  return `<div>
+    return `<div>
   <div>
     <h2>Cookbooks</h2>
   </div>

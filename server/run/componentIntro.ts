@@ -1,5 +1,5 @@
 export function componentIntro(): string {
-  return `<div>
+    return `<div>
   <div>
     <h2>What is yellowFloppyDrive?</h2>
   </div>

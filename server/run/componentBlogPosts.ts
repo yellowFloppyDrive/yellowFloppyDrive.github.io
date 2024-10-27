@@ -1,5 +1,5 @@
 export function componentBlogPosts(): string {
-  return `<div>
+    return `<div>
   <div>
     <h1>yellowFloppyDrive - Blog</h1>
   </div>

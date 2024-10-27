@@ -1,5 +1,5 @@
 export function componentSocials(): string {
-  return `<div>
+    return `<div>
   <div>
     <h2>Socials</h2>
   </div>
