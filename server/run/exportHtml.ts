@@ -7,7 +7,7 @@ export type ExportHtmlArgs = {
 };
 
 export async function exportHtml(args: ExportHtmlArgs): Promise<void> {
-    const pageDirPath = path.resolve(__dirname, `../public/${args.pageDir}/`);
+    const pageDirPath = path.resolve(__dirname, `../../public/${args.pageDir}/`);
 
     try {
         await fs.access(pageDirPath);
