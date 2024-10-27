@@ -6,13 +6,11 @@ import {componentPage} from "./componentPage";
 import {componentProjects} from "./componentProjects";
 import {componentScript} from "./componentScript";
 import {componentSections} from "./componentSections";
-import {componentGtmBody} from "./componentGtmBody";
 
 export function pageProjects(): string {
     const headHtml = componentHead({pageTitle: "Projects"});
 
     const bodyHtml = [
-        componentGtmBody(),
         componentHero(),
         componentMenu(),
         componentSections([componentProjects()]),

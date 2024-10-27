@@ -7,13 +7,11 @@ import {componentPage} from "./componentPage";
 import {componentScript} from "./componentScript";
 import {componentSections} from "./componentSections";
 import {componentSocials} from "./componentSocials";
-import {componentGtmBody} from "./componentGtmBody";
 
 export function pageIndex(): string {
     const headHtml = componentHead({pageTitle: ""});
 
     const bodyHtml = [
-        componentGtmBody(),
         componentHero(),
         componentMenu(),
         componentSections([componentSocials(), componentIntro()]),
