@@ -1,3 +1,6 @@
+import {importGoogleAnalyticsScripts} from "./importGoogleAnalyticsScripts";
+import {importMonotonFont} from "./importMonotonFont";
+
 export type ComponentHeadArgs = {
     pageTitle: string;
 };
@@ -11,14 +14,8 @@ export function componentHead(args: ComponentHeadArgs): string {
     <link rel="icon" type="image/png" href="/logo.png"/>
     <link rel="stylesheet" href="/styles.css"/>
   
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZPPYF1DZ3P"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    ${importGoogleAnalyticsScripts()}
     
-      gtag('config', 'G-ZPPYF1DZ3P');
-    </script>
+    ${importMonotonFont()}
 </head>`;
 }
